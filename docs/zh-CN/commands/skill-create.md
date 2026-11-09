@@ -173,4 +173,4 @@ src/
 
 ***
 
-*属于 [ECC](https://github.com/affaan-m/ECC)*
+*属于 [ECC](https://github.com/mohsinali373/ECC)*

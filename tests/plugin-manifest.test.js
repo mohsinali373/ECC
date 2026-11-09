@@ -442,7 +442,7 @@ test('codex plugin.json has interface.displayName', () => {
 });
 
 test('codex plugin.json uses canonical ECC repo and display name', () => {
-  assert.strictEqual(codexPlugin.repository, 'https://github.com/affaan-m/ECC');
+  assert.strictEqual(codexPlugin.repository, 'https://github.com/mohsinali373/ECC');
   assert.strictEqual(codexPlugin.interface.displayName, 'ECC');
 });
 
@@ -692,7 +692,7 @@ test('user-facing docs do not use the legacy non-URL marketplace add form', () =
 test('.codex-plugin README uses current marketplace add flow', () => {
   const readme = fs.readFileSync(path.join(repoRoot, '.codex-plugin', 'README.md'), 'utf8');
   assert.ok(readme.includes('codex plugin marketplace add'), 'Expected .codex-plugin README to document codex plugin marketplace add');
-  assert.ok(readme.includes('codex plugin marketplace add affaan-m/ECC'), 'Expected .codex-plugin README to document the canonical ECC repo marketplace source');
+  assert.ok(readme.includes('codex plugin marketplace add mohsinali373/ECC'), 'Expected .codex-plugin README to document the canonical ECC repo marketplace source');
   assert.ok(readme.includes('codex plugin add ecc@ecc'), 'Expected .codex-plugin README to document the current Codex install command');
   assert.ok(readme.includes('codex plugin list --json'), 'Expected .codex-plugin README to document a machine-checkable verification command');
   assert.ok(readme.includes('safe to run again'), 'Expected .codex-plugin README to explain idempotent marketplace and plugin registration');

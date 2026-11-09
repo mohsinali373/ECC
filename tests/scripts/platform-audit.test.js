@@ -180,7 +180,7 @@ function runTests() {
         `--root=${rootDir}`,
         '--json',
         '--repo',
-        'affaan-m/ECC',
+        'mohsinali373/ECC',
         '--max-open-prs',
         '5',
         '--max-open-issues',
@@ -191,7 +191,7 @@ function runTests() {
 
       assert.strictEqual(parsed.format, 'json');
       assert.strictEqual(parsed.root, path.resolve(rootDir));
-      assert.deepStrictEqual(parsed.repos, ['affaan-m/ECC']);
+      assert.deepStrictEqual(parsed.repos, ['mohsinali373/ECC']);
       assert.strictEqual(parsed.thresholds.maxOpenPrs, 5);
       assert.strictEqual(parsed.thresholds.maxOpenIssues, 6);
       assert.deepStrictEqual(parsed.allowUntracked, ['docs/drafts/']);
@@ -285,12 +285,12 @@ function runTests() {
     try {
       seedRepo(projectRoot);
       const shimPath = writeGhShim(projectRoot, {
-        'pr list --repo affaan-m/ECC --state open --json number,title,isDraft,mergeStateStatus,updatedAt,url,author': [],
-        'issue list --repo affaan-m/ECC --state open --json number,title,updatedAt,url,author,labels': [],
-        [discussionEnabledGhKey('affaan-m', 'ECC')]: {
+        'pr list --repo mohsinali373/ECC --state open --json number,title,isDraft,mergeStateStatus,updatedAt,url,author': [],
+        'issue list --repo mohsinali373/ECC --state open --json number,title,updatedAt,url,author,labels': [],
+        [discussionEnabledGhKey('mohsinali373', 'ECC')]: {
           data: { repository: { hasDiscussionsEnabled: true } }
         },
-        [discussionGhKey('affaan-m', 'ECC')]: {
+        [discussionGhKey('mohsinali373', 'ECC')]: {
           data: {
             repository: {
               hasDiscussionsEnabled: true,
@@ -318,7 +318,7 @@ function runTests() {
         '--format=json',
         `--root=${projectRoot}`,
         '--repo',
-        'affaan-m/ECC'
+        'mohsinali373/ECC'
       ], {
         cwd: projectRoot,
         env: {
@@ -354,12 +354,12 @@ function runTests() {
         author: { login: 'contributor' }
       }));
       const shimPath = writeGhShim(projectRoot, {
-        'pr list --repo affaan-m/ECC --state open --json number,title,isDraft,mergeStateStatus,updatedAt,url,author': prs,
-        'issue list --repo affaan-m/ECC --state open --json number,title,updatedAt,url,author,labels': [],
-        [discussionEnabledGhKey('affaan-m', 'ECC')]: {
+        'pr list --repo mohsinali373/ECC --state open --json number,title,isDraft,mergeStateStatus,updatedAt,url,author': prs,
+        'issue list --repo mohsinali373/ECC --state open --json number,title,updatedAt,url,author,labels': [],
+        [discussionEnabledGhKey('mohsinali373', 'ECC')]: {
           data: { repository: { hasDiscussionsEnabled: true } }
         },
-        [discussionGhKey('affaan-m', 'ECC')]: {
+        [discussionGhKey('mohsinali373', 'ECC')]: {
           data: {
             repository: {
               hasDiscussionsEnabled: true,
@@ -387,7 +387,7 @@ function runTests() {
         '--format=json',
         `--root=${projectRoot}`,
         '--repo',
-        'affaan-m/ECC',
+        'mohsinali373/ECC',
         '--max-open-prs',
         '2'
       ], {

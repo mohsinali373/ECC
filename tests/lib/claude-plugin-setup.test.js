@@ -140,7 +140,7 @@ function officialMarketplace(scope = 'user') {
   return {
     name: 'ecc',
     source: 'github',
-    repo: 'affaan-m/ECC',
+    repo: 'mohsinali373/ECC',
     scope,
   };
 }
@@ -219,11 +219,11 @@ test('marketplace provenance is validated according to its source type', () => {
   assert.strictEqual(isOfficialMarketplace({
     name: 'ecc',
     source: 'git',
-    url: 'https://github.com/affaan-m/ECC.git',
+    url: 'https://github.com/mohsinali373/ECC.git',
   }), true);
   for (const url of [
-    'affaan-m/ECC',
-    'http://github.com/affaan-m/ECC.git',
+    'mohsinali373/ECC',
+    'http://github.com/mohsinali373/ECC.git',
   ]) {
     assert.strictEqual(isOfficialMarketplace({
       name: 'ecc',
@@ -632,7 +632,7 @@ test('dry-run snapshots local-scope inventory into isolated Claude and project r
     }, null, 2)}\n`);
     fs.writeFileSync(marketplacesPath, `${JSON.stringify({
       ecc: {
-        source: { source: 'github', repo: 'affaan-m/ECC' },
+        source: { source: 'github', repo: 'mohsinali373/ECC' },
       },
     }, null, 2)}\n`);
 

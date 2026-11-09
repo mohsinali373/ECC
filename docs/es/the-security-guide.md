@@ -452,5 +452,5 @@ Si no has leído las guías anteriores, empieza aquí:
 > [La Guía Extendida de ECC](./the-longform-guide.md)
 
 también guarda estos repositorios:
-- [github.com/affaan-m/ECC](https://github.com/affaan-m/ECC)
+- [github.com/mohsinali373/ECC](https://github.com/mohsinali373/ECC)
 - [github.com/affaan-m/agentshield](https://github.com/affaan-m/agentshield)

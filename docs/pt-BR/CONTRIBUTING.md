@@ -51,7 +51,7 @@ Comandos slash que invocam fluxos de trabalho úteis:
 
 ```bash
 # 1. Fork e clone
-gh repo fork affaan-m/ECC --clone
+gh repo fork mohsinali373/ECC --clone
 cd ECC
 
 # 2. Criar uma branch
@@ -418,8 +418,8 @@ Como você testou isso.
 
 ## Dúvidas?
 
-- **Issues:** [github.com/affaan-m/ECC/issues](https://github.com/affaan-m/ECC/issues)
-- **X/Twitter:** [@affaanmustafa](https://x.com/affaanmustafa)
+- **Issues:** [github.com/mohsinali373/ECC/issues](https://github.com/mohsinali373/ECC/issues)
+- **GitHub:** [@mohsinali373](https://github.com/mohsinali373)
 
 ---
 

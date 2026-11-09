@@ -56,7 +56,7 @@ deployment, inspect a real **Issue Submission Guard** run and its job summary.
 For a live read-only replay, supply `GITHUB_TOKEN` securely and run:
 
 ```sh
-GITHUB_REPOSITORY=affaan-m/ECC node scripts/ci/issue-submission-guard.js --dry-run --issue <NUMBER>
+GITHUB_REPOSITORY=mohsinali373/ECC node scripts/ci/issue-submission-guard.js --dry-run --issue <NUMBER>
 ```
 
 The dry run reads GitHub but does not close, lock, comment, alert, or block.

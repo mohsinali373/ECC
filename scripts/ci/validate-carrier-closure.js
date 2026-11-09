@@ -7,7 +7,7 @@
  * against the planned file set of the carrier it would ship in.
  *
  * The static require-graph extraction technique is adapted from community
- * PR #2788 (affaan-m/ECC). The staged load smoke from that work -- actually
+ * PR #2788 (mohsinali373/ECC). The staged load smoke from that work -- actually
  * loading entry scripts from inside a materialized carrier -- is deliberately
  * not ported here, and neither is command pruning.
  */

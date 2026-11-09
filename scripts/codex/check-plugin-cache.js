@@ -190,7 +190,7 @@ function checkCache(options) {
     } else {
       log(`No installed cache entries found for ${options.marketplace}/${options.plugin}.`);
       if (options.marketplace === 'ecc' && options.plugin === 'ecc') {
-        log('Run: codex plugin marketplace add affaan-m/ECC');
+        log('Run: codex plugin marketplace add mohsinali373/ECC');
       } else {
         log('Install the requested plugin into the Codex plugin cache.');
       }

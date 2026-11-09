@@ -282,7 +282,7 @@ claude --version
 # Requires Claude Code 2.0+
 
 # Manual install (if marketplace fails)
-git clone https://github.com/affaan-m/ECC.git
+git clone https://github.com/mohsinali373/ECC.git
 cp -r ECC ~/.claude/plugins/ecc
 ```
 
@@ -421,7 +421,7 @@ find ~/.claude/plugins -name "*.sh" -exec dos2unix {} \;
 
 如果您仍然遇到问题：
 
-1. **检查 GitHub Issues**：[github.com/affaan-m/ECC/issues](https://github.com/affaan-m/ECC/issues)
+1. **检查 GitHub Issues**：[github.com/mohsinali373/ECC/issues](https://github.com/mohsinali373/ECC/issues)
 2. **启用调试日志记录**：
    ```bash
    export CLAUDE_DEBUG=1

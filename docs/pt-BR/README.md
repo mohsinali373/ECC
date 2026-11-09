@@ -2,9 +2,9 @@
 
 # ECC
 
-[![Stars](https://img.shields.io/github/stars/affaan-m/ECC?style=flat)](https://github.com/affaan-m/ECC/stargazers)
-[![Forks](https://img.shields.io/github/forks/affaan-m/ECC?style=flat)](https://github.com/affaan-m/ECC/network/members)
-[![Contributors](https://img.shields.io/github/contributors/affaan-m/ECC?style=flat)](https://github.com/affaan-m/ECC/graphs/contributors)
+[![Stars](https://img.shields.io/github/stars/mohsinali373/ECC?style=flat)](https://github.com/mohsinali373/ECC/stargazers)
+[![Forks](https://img.shields.io/github/forks/mohsinali373/ECC?style=flat)](https://github.com/mohsinali373/ECC/network/members)
+[![Contributors](https://img.shields.io/github/contributors/mohsinali373/ECC?style=flat)](https://github.com/mohsinali373/ECC/graphs/contributors)
 [![npm ecc-universal](https://img.shields.io/npm/dw/ecc-universal?label=ecc-universal%20weekly%20downloads&logo=npm)](https://www.npmjs.com/package/ecc-universal)
 [![npm ecc-agentshield](https://img.shields.io/npm/dw/ecc-agentshield?label=ecc-agentshield%20weekly%20downloads&logo=npm)](https://www.npmjs.com/package/ecc-agentshield)
 [![GitHub App Install](https://img.shields.io/endpoint?url=https%3A%2F%2Fapi.ecc.tools%2Fbadge%2Finstalls&logo=github)](https://github.com/marketplace/ecc-tools)
@@ -132,7 +132,7 @@ Comece em menos de 2 minutos:
 
 ```bash
 # Adicionar marketplace
-/plugin marketplace add https://github.com/affaan-m/ECC
+/plugin marketplace add https://github.com/mohsinali373/ECC
 
 # Instalar plugin
 /plugin install ecc@ecc
@@ -144,7 +144,7 @@ Comece em menos de 2 minutos:
 
 ```bash
 # Clone o repositório primeiro
-git clone https://github.com/affaan-m/ECC.git
+git clone https://github.com/mohsinali373/ECC.git
 cd ECC
 
 # Instalar dependências (escolha seu gerenciador de pacotes)
@@ -321,7 +321,7 @@ claude --version
 
 ```bash
 # Adicionar este repositório como marketplace
-/plugin marketplace add https://github.com/affaan-m/ECC
+/plugin marketplace add https://github.com/mohsinali373/ECC
 
 # Instalar o plugin
 /plugin install ecc@ecc
@@ -335,7 +335,7 @@ Ou adicione diretamente ao seu `~/.claude/settings.json`:
     "ecc": {
       "source": {
         "source": "github",
-        "repo": "affaan-m/ECC"
+        "repo": "mohsinali373/ECC"
       }
     }
   },
@@ -349,7 +349,7 @@ Ou adicione diretamente ao seu `~/.claude/settings.json`:
 >
 > ```bash
 > # Clone o repositório primeiro
-> git clone https://github.com/affaan-m/ECC.git
+> git clone https://github.com/mohsinali373/ECC.git
 >
 > # Opção A: Regras no nível do usuário (aplica a todos os projetos)
 > mkdir -p ~/.claude/rules
@@ -367,7 +367,7 @@ Ou adicione diretamente ao seu `~/.claude/settings.json`:
 
 ```bash
 # Clonar o repositório
-git clone https://github.com/affaan-m/ECC.git
+git clone https://github.com/mohsinali373/ECC.git
 
 # Copiar agentes para sua config Claude
 cp ECC/agents/*.md ~/.claude/agents/

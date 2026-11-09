@@ -4,11 +4,11 @@
   "version": "2.2.3",
   "description": "Harness-native engineering workflows for Qoder: canonical skills and agents, legacy command shims, a reviewed SessionStart hook, and optional MCP tooling.",
   "author": {
-    "name": "Affaan Mustafa",
-    "url": "https://x.com/affaanmustafa"
+    "name": "Mohsin Ali",
+    "url": "https://github.com/mohsinali373"
   },
   "homepage": "https://ecc.tools",
-  "repository": "https://github.com/affaan-m/ECC",
+  "repository": "https://github.com/mohsinali373/ECC",
   "license": "MIT",
   "keywords": [
     "qoder",

@@ -4,7 +4,7 @@ Candidate id: `preserved-outcome-and-chain`
 
 This is a synthetic, read-only comparison, with expected rubric decisions rather
 than a historical reproduction or measured model result. It responds to
-[reported feedback](https://github.com/affaan-m/ECC/issues/3695).
+[reported feedback](https://github.com/mohsinali373/ECC/issues/3695).
 
 ## Compare Meaning Before Shortening
 

@@ -27,7 +27,7 @@ const REPO = process.env.ECC_REPO || [
   join(homedir(), 'GitHub/ECC'),
   join(homedir(), 'GitHub/ECC/everything-claude-code'),
 ].find(dir => existsSync(join(dir, 'package.json'))) || join(homedir(), 'GitHub/ECC');
-const REPO_URL = 'https://github.com/affaan-m/ECC';
+const REPO_URL = 'https://github.com/mohsinali373/ECC';
 const INVITE = process.env.DISCORD_INVITE || '';
 const API = 'https://discord.com/api/v10';
 
@@ -143,7 +143,7 @@ const handlers = {
     '',
     `- repo: ${REPO_URL}`,
     '- site: https://ecc.tools',
-    `- install: \`/plugin marketplace add affaan-m/ECC\` then \`/plugin install ecc\``,
+    `- install: \`/plugin marketplace add mohsinali373/ECC\` then \`/plugin install ecc\``,
     INVITE ? `- invite a friend: ${INVITE}` : '',
   ].filter(Boolean).join('\n'),
 
@@ -169,7 +169,7 @@ const handlers = {
   },
 
   release: async () => {
-    const res = await fetch('https://api.github.com/repos/affaan-m/ECC/releases/latest', {
+    const res = await fetch('https://api.github.com/repos/mohsinali373/ECC/releases/latest', {
       headers: { 'User-Agent': 'ecc-discord-bot' },
     });
     if (!res.ok) return `couldn't reach GitHub (${res.status}) — ${REPO_URL}/releases`;

@@ -8,7 +8,7 @@ const path = require('path');
 const { FEEDBACK_ROUTES, exitFeedbackLines, getFeedbackPayload, problemReportLines } = require('../../scripts/lib/feedback-links');
 
 const ISSUE_TEMPLATE_DIR = path.join(__dirname, '..', '..', '.github', 'ISSUE_TEMPLATE');
-const ISSUES_NEW_URL = 'https://github.com/affaan-m/ECC/issues/new';
+const ISSUES_NEW_URL = 'https://github.com/mohsinali373/ECC/issues/new';
 
 test('every route is a new-issue URL on the ECC repository with only a template query', () => {
   assert.deepEqual(Object.keys(FEEDBACK_ROUTES).sort(), ['feature', 'feedback', 'problem']);
@@ -16,7 +16,7 @@ test('every route is a new-issue URL on the ECC repository with only a template 
     const parsed = new URL(route);
     assert.equal(parsed.protocol, 'https:', `${name} protocol`);
     assert.equal(parsed.hostname, 'github.com', `${name} host`);
-    assert.equal(parsed.pathname, '/affaan-m/ECC/issues/new', `${name} path`);
+    assert.equal(parsed.pathname, '/mohsinali373/ECC/issues/new', `${name} path`);
     assert.equal(parsed.username, '', `${name} username`);
     assert.equal(parsed.password, '', `${name} password`);
     assert.equal(parsed.hash, '', `${name} hash`);

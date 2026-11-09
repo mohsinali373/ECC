@@ -9,7 +9,7 @@ social announcement.
 | Field | Evidence |
 | --- | --- |
 | Upstream main | `c2471fe5c535310f8a8008c9ed7ea9f6757b33f2` |
-| Git remote | `https://github.com/affaan-m/ECC.git` |
+| Git remote | `https://github.com/mohsinali373/ECC.git` |
 | Evidence scope | Current `main` after PR #1990 harness-audit GitHub integration scoring, PR #1991 canonical ECC identity gate, PR #1992 release video-suite gate, PR #1993 growth outreach pack, PR #1994 May 19 publication evidence refresh, PR #1995 operator dashboard refresh, PR #1996 primary render self-eval gate, PR #1997 publish-candidate gate, PR #1998 visual QA gate, PR #1999 video dashboard evidence refresh, PR #2000 suite-count evidence refresh, PR #2001 owner approval packet addition, PR #2002 owner approval dashboard gate refresh, PR #2004 Linear readiness evidence sync, PR #2005 post-PR #2004 evidence refresh, PR #2008 release supply-chain evidence gate fix, PR #2006 per-project Claude Code adapter, PR #2009 continuous-learning project registry hygiene fix, PR #2011 GateGuard quoted git introspection fix, PR #2013 deterministic release approval gate, PR #2017 AgentShield adapter evidence sync, PR #2018 AgentShield Dependabot evidence sync, ECC-Tools #80-#91 hosted observability/readback, Marketplace Pro selected-target, selected-target announcement gate, and env-file operator-path batch, AgentShield #94 Zed/VS Code adapter coverage, AgentShield #95 Dependabot alert closure, PR #2019 Marketplace Pro release-gate sync, and PR #2020 selected-target announcement gate sync |
 | Local status caveat | `git status --short --branch` was clean after pulling `origin/main`; generated evidence files are committed after the source snapshot they describe |
 
@@ -21,14 +21,14 @@ release commit with a strictly clean checkout before publishing.
 | Surface | Command | Result |
 | --- | --- | --- |
 | Platform audit | `node scripts/platform-audit.js --json` | Ready true; tracked repos report 0 open PRs, 0 open issues, 0 discussion maintainer-touch gaps, 0 answerable Q&A gaps, 0 conflicting PRs, and 0 blocking dirty files |
-| Trunk PRs | `gh pr list --repo affaan-m/ECC --state open --json number,title,url,author --limit 100` | `[]` |
-| Trunk issues | `gh issue list --repo affaan-m/ECC --state open --json number,title,url,author --limit 100` | `[]` |
-| Discussion audit through platform audit | `node scripts/platform-audit.js --json` | `affaan-m/ECC` discussions enabled; 60 sampled after #2015 setup-location Q&A was answered and accepted; 0 needing maintainer touch; 0 answerable without accepted answer |
+| Trunk PRs | `gh pr list --repo mohsinali373/ECC --state open --json number,title,url,author --limit 100` | `[]` |
+| Trunk issues | `gh issue list --repo mohsinali373/ECC --state open --json number,title,url,author --limit 100` | `[]` |
+| Discussion audit through platform audit | `node scripts/platform-audit.js --json` | `mohsinali373/ECC` discussions enabled; 60 sampled after #2015 setup-location Q&A was answered and accepted; 0 needing maintainer touch; 0 answerable without accepted answer |
 | Worktree | `git status --short --branch` | `## main...origin/main` |
 
 Tracked repositories in the platform audit were:
 
-- `affaan-m/ECC`
+- `mohsinali373/ECC`
 - `affaan-m/agentshield`
 - `affaan-m/JARVIS`
 - `ECC-Tools/ECC-Tools`
@@ -68,7 +68,7 @@ Tracked repositories in the platform audit were:
 | Surface | Evidence |
 | --- | --- |
 | ECC approval gate | PR #2013 merged as `9819626459a662773be7d0b1c18d82c1316b8c36`; GitHub Actions run `26128749863` completed successfully; `npm run release:approval-gate -- --format json` remains intentionally blocked with digest `ef8f49f727b7`, 4/6 passing, and failures only on owner decisions plus live URL readbacks |
-| ECC platform audit | `node scripts/platform-audit.js --json` at `2026-05-19T22:45:15Z` returned ready true, 0 open PRs, 0 open issues, 0 discussion maintainer-touch gaps, 0 answerable Q&A gaps, and 0 dirty blockers across `affaan-m/ECC`, `affaan-m/agentshield`, `affaan-m/JARVIS`, `ECC-Tools/ECC-Tools`, and `ECC-Tools/ECC-website` |
+| ECC platform audit | `node scripts/platform-audit.js --json` at `2026-05-19T22:45:15Z` returned ready true, 0 open PRs, 0 open issues, 0 discussion maintainer-touch gaps, 0 answerable Q&A gaps, and 0 dirty blockers across `mohsinali373/ECC`, `affaan-m/agentshield`, `affaan-m/JARVIS`, `ECC-Tools/ECC-Tools`, and `ECC-Tools/ECC-website` |
 | ECC-Tools billing hardening | ECC-Tools PR #79 merged as `67ee247ae1b7b50ecc1261ed5d62d65cc8390da8`; preflight and live billing-announcement output now redact account login values to a stable fingerprint while preserving readiness blockers/actions; local validation passed targeted tests, full test suite 678/678, lint, typecheck, manual preflight, and `git diff --check`; post-merge main CI run `26129253509` completed successfully |
 | JARVIS queue drain | JARVIS PR #15 merged the Dependabot `idna` 3.11 to 3.15 security bump as `4b3685d6ee23b4da1f1a7d22281c6b5d6c0a42c7`; PR checks and post-merge CI/CodeQL passed |
 | JARVIS deploy repair | JARVIS PR #16 merged as `4369c34babd21d539c420866da51c7a8365f1c9e`; the deploy workflow no longer uses an invalid job-level `secrets.*` condition, Vercel deploy skips cleanly when secrets are absent, backend image build/push succeeds, and main CI, CodeQL, and Deploy runs `26129539376`, `26129539427`, and `26129539425` completed successfully |
@@ -79,7 +79,7 @@ Tracked repositories in the platform audit were:
 | Surface | Evidence |
 | --- | --- |
 | ECC discussion queue | Discussion #2015 was answered and marked accepted with conservative setup guidance: do not install in `C:\`; use a normal workspace; install `ecc@ecc` once through the Claude plugin marketplace; copy only needed rule folders when using manual rules; do not stack plugin plus full manual install. |
-| ECC platform audit | `node scripts/platform-audit.js --json` at `2026-05-20T00:25:38Z` returned ready true with 0 open PRs, 0 open issues, 0 discussion maintainer-touch gaps, 0 answerable Q&A gaps, 0 conflicting PRs, and 0 dirty blockers across `affaan-m/ECC`, `affaan-m/agentshield`, `affaan-m/JARVIS`, `ECC-Tools/ECC-Tools`, and `ECC-Tools/ECC-website`. |
+| ECC platform audit | `node scripts/platform-audit.js --json` at `2026-05-20T00:25:38Z` returned ready true with 0 open PRs, 0 open issues, 0 discussion maintainer-touch gaps, 0 answerable Q&A gaps, 0 conflicting PRs, and 0 dirty blockers across `mohsinali373/ECC`, `affaan-m/agentshield`, `affaan-m/JARVIS`, `ECC-Tools/ECC-Tools`, and `ECC-Tools/ECC-website`. |
 | ECC platform audit recheck | `npm run platform:audit -- --json` at `2026-05-20T00:42:11Z` returned ready true with 0 open PRs, 0 open issues, 0 discussion maintainer-touch gaps, 0 answerable Q&A gaps, 0 conflicting PRs, 0 GitHub errors, and 0 dirty blockers across the same tracked repo set after AgentShield #94 merged. |
 | ECC-Tools #80/#81/#82 | PR #80 merged runtime-receipt failure-reason enforcement as `4efc8cc858022f84c844690f3298633b081c4398`; PR #81 preserved AgentShield fleet approval IDs as `1fbf635f492284f75ba7166c029c39eb8cc15794`; PR #82 rendered those approval IDs in hosted security review comments/check-runs as `7a7b4d096a176ae80b3a2076c09d45601e36013a`. |
 | ECC-Tools #83/#84 | PR #83 merged deterministic Linear external-ID reuse for deferred follow-ups as `b6b107f33961bef18a85fb619f3a976eb5d752dd`; PR #84 merged hosted AgentShield remediation sync to Linear as `73bac7058071c55cb30c6b8ac6db779b3660c02c`. Local validation covered focused route/client tests, typecheck, lint, full ECC-Tools test suite, and whitespace checks before merge; GitHub Verify, Security Audit, and Workers Builds passed. |
@@ -146,7 +146,7 @@ Tracked repositories in the platform audit were:
 
 | Surface | Evidence |
 | --- | --- |
-| Canonical repo identity | Public URLs and release docs now use `https://github.com/affaan-m/ECC` where public links are needed |
+| Canonical repo identity | Public URLs and release docs now use `https://github.com/mohsinali373/ECC` where public links are needed |
 | Release claim | Release notes and launch collateral frame ECC as the harness-native operator system for agentic work, not a Claude-only config pack |
 | Video proof | `video-suite-production.md` gates the local rough render, timeline, captions, source inventory, publish-candidate clip set, self-eval, black-frame QA, and no-private-path publication rules |
 | Growth proof | `partner-sponsor-talks-pack.md` provides approval-gated copy for sponsors, partners, consulting, talks, podcasts, GitHub Discussion, and video CTAs |

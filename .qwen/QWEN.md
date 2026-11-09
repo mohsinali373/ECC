@@ -8,7 +8,7 @@ ECC is a cross-harness coding system with specialized agents, skills, and comman
 
 The Qwen target installs the full managed manifest surface into `~/.qwen/`: `rules/`, `agents/`, `commands/`, `skills/`, and `mcp-configs/`. This file carries Qwen-specific guidance; repo-wide operating rules live in `AGENTS.md`. Qwen Code 0.25.0 loads both at the home level under default settings, but `AGENTS.md` is not the documented default context filename, so set `context.fileName` if a later release stops loading it.
 
-`docs/QWEN-GUIDE.md` covers install layout, updating, and uninstalling. It lives in the ECC repository and is **not** copied into `~/.qwen/`, so read it from a checkout or from <https://github.com/affaan-m/ecc/blob/main/docs/QWEN-GUIDE.md>.
+`docs/QWEN-GUIDE.md` covers install layout, updating, and uninstalling. It lives in the ECC repository and is **not** copied into `~/.qwen/`, so read it from a checkout or from <https://github.com/mohsinali373/ecc/blob/main/docs/QWEN-GUIDE.md>.
 
 ## Core Workflow
 

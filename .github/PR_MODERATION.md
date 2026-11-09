@@ -13,7 +13,7 @@ judge whether a patch is useful. Existing open PRs are not bulk-closed on rollou
 | Open-PR cap | Ten open PRs per author at any time | Close excess new PRs or a reopened PR with an explanatory comment; no lock, no alert |
 | Known denied account | User ID `108231307`, currently `dajiaohuang` | Close and lock its incoming/reopened PR |
 | Trusted contributors | Live repository write, maintain, or admin permission | Exempt from burst and denied-account moderation; still subject to the open-PR cap |
-| Notifications | `@affaan-m @haelyra` | One bot-authored issue per author per UTC day, plus one escalation comment |
+| Notifications | `@mohsinali373` | One bot-authored issue per author per UTC day, plus one escalation comment |
 
 Edit `pr-burst-policy.json` to change thresholds, notification recipients or
 denied numeric IDs, or `maxOpen` to change the open-PR cap.
@@ -52,16 +52,16 @@ blocks cannot stop someone from using a different GitHub account.
 ## Activate
 
 1. Merge the reviewed workflow and script into `main`.
-2. To enable automatic account blocking, `affaan-m` creates a dedicated
+2. To enable automatic account blocking, `mohsinali373` creates a dedicated
    fine-grained token with the account permission **Block another user: write**.
    Store it as repository Actions secret `PR_MODERATION_BLOCK_TOKEN`. Use GitHub's
-   secret UI or `gh secret set PR_MODERATION_BLOCK_TOKEN --repo affaan-m/ECC`
+   secret UI or `gh secret set PR_MODERATION_BLOCK_TOKEN --repo mohsinali373/ECC`
    with its hidden prompt. Do not paste credentials into chat or source files.
 3. Verify a genuine subsequent guard run and its job summary. Without the secret,
    closure and alerting still run. A severe burst records blocking as unavailable
    in the alert and fails the job so maintainers see the missing protection.
 
-ECC currently belongs to the personal account `affaan-m`. GitHub account blocking
+ECC currently belongs to the personal account `mohsinali373`. GitHub account blocking
 applies across **all repositories owned by that account**. The script checks the
 token's authenticated identity before calling the personal blocking API. A
 collaborator's personal block cannot protect this repository. The normal
@@ -87,7 +87,7 @@ For a live read-only replay, supply `GITHUB_TOKEN` through your secure shell
 environment, then run:
 
 ```sh
-GITHUB_REPOSITORY=affaan-m/ECC node scripts/ci/pr-burst-guard.js --dry-run --pr 3580
+GITHUB_REPOSITORY=mohsinali373/ECC node scripts/ci/pr-burst-guard.js --dry-run --pr 3580
 ```
 
 Expected for the October 14 snapshot: author `jwcastillo`, count `14`, `block:

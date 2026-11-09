@@ -2,9 +2,9 @@
 
 # ECC
 
-[![Stars](https://img.shields.io/github/stars/affaan-m/ECC?style=flat)](https://github.com/affaan-m/ECC/stargazers)
-[![Forks](https://img.shields.io/github/forks/affaan-m/ECC?style=flat)](https://github.com/affaan-m/ECC/network/members)
-[![Contributors](https://img.shields.io/github/contributors/affaan-m/ECC?style=flat)](https://github.com/affaan-m/ECC/graphs/contributors)
+[![Stars](https://img.shields.io/github/stars/mohsinali373/ECC?style=flat)](https://github.com/mohsinali373/ECC/stargazers)
+[![Forks](https://img.shields.io/github/forks/mohsinali373/ECC?style=flat)](https://github.com/mohsinali373/ECC/network/members)
+[![Contributors](https://img.shields.io/github/contributors/mohsinali373/ECC?style=flat)](https://github.com/mohsinali373/ECC/graphs/contributors)
 [![npm ecc-universal](https://img.shields.io/npm/dw/ecc-universal?label=ecc-universal%20weekly%20downloads&logo=npm)](https://www.npmjs.com/package/ecc-universal)
 [![npm ecc-agentshield](https://img.shields.io/npm/dw/ecc-agentshield?label=ecc-agentshield%20weekly%20downloads&logo=npm)](https://www.npmjs.com/package/ecc-agentshield)
 [![GitHub App Install](https://img.shields.io/endpoint?url=https%3A%2F%2Fapi.ecc.tools%2Fbadge%2Finstalls&logo=github)](https://github.com/marketplace/ecc-tools)
@@ -100,7 +100,7 @@
 - **30명 이상의 커뮤니티 기여** — 6개 언어에 걸친 30명의 기여자
 - **978개 내부 테스트** — 에이전트, 스킬, 커맨드, 훅, 룰 전반에 걸친 검증
 
-전체 변경 내역은 [Releases](https://github.com/affaan-m/ECC/releases)에서 확인하세요.
+전체 변경 내역은 [Releases](https://github.com/mohsinali373/ECC/releases)에서 확인하세요.
 
 ---
 
@@ -112,7 +112,7 @@
 
 ```bash
 # 마켓플레이스 추가
-/plugin marketplace add https://github.com/affaan-m/ECC
+/plugin marketplace add https://github.com/mohsinali373/ECC
 
 # 플러그인 설치
 /plugin install ecc@ecc
@@ -124,7 +124,7 @@
 
 ```bash
 # 먼저 저장소 클론
-git clone https://github.com/affaan-m/ECC.git
+git clone https://github.com/mohsinali373/ECC.git
 cd ECC
 
 # 권장: 설치 스크립트 사용 (common + 언어별 룰을 안전하게 처리)
@@ -356,7 +356,7 @@ Claude Code v2.1+는 설치된 플러그인의 `hooks/hooks.json`을 **자동으
 
 ```bash
 # 마켓플레이스 추가
-/plugin marketplace add https://github.com/affaan-m/ECC
+/plugin marketplace add https://github.com/mohsinali373/ECC
 
 # 플러그인 설치
 /plugin install ecc@ecc
@@ -370,7 +370,7 @@ Claude Code v2.1+는 설치된 플러그인의 `hooks/hooks.json`을 **자동으
     "ecc": {
       "source": {
         "source": "github",
-        "repo": "affaan-m/ECC"
+        "repo": "mohsinali373/ECC"
       }
     }
   },
@@ -383,7 +383,7 @@ Claude Code v2.1+는 설치된 플러그인의 `hooks/hooks.json`을 **자동으
 > **참고:** Claude Code 플러그인 시스템은 `rules`를 플러그인으로 배포하는 것을 지원하지 않습니다. 룰은 수동으로 설치해야 합니다:
 >
 > ```bash
-> git clone https://github.com/affaan-m/ECC.git
+> git clone https://github.com/mohsinali373/ECC.git
 >
 > # 옵션 A: 사용자 레벨 룰 (모든 프로젝트에 적용)
 > mkdir -p ~/.claude/rules
@@ -403,7 +403,7 @@ Claude Code v2.1+는 설치된 플러그인의 `hooks/hooks.json`을 **자동으
 
 ```bash
 # 저장소 클론
-git clone https://github.com/affaan-m/ECC.git
+git clone https://github.com/mohsinali373/ECC.git
 
 # 에이전트 복사
 cp ECC/agents/*.md ~/.claude/agents/
@@ -703,13 +703,13 @@ Claude Code 사용 비용이 부담된다면 토큰 소비를 관리해야 합�
 
 이 프로젝트는 무료 오픈소스입니다. 스폰서의 지원으로 유지보수와 성장이 이루어집니다.
 
-[**스폰서 되기**](https://github.com/sponsors/affaan-m) | [스폰서 티어](../../SPONSORS.md) | [스폰서십 프로그램](../../SPONSORING.md)
+[**스폰서 되기**](https://github.com/sponsors/mohsinali373) | [스폰서 티어](../../SPONSORS.md) | [스폰서십 프로그램](../../SPONSORING.md)
 
 ---
 
 ## Star 히스토리
 
-[![Star History Chart](https://api.star-history.com/svg?repos=affaan-m/ECC&type=Date)](https://star-history.com/#affaan-m/ECC&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=mohsinali373/ECC&type=Date)](https://star-history.com/#mohsinali373/ECC&Date)
 
 ---
 
@@ -717,7 +717,7 @@ Claude Code 사용 비용이 부담된다면 토큰 소비를 관리해야 합�
 
 - **요약 가이드 (여기서 시작):** [The Shorthand Guide to ECC](https://x.com/affaanmustafa/status/2012378465664745795)
 - **상세 가이드 (고급):** [The Longform Guide to ECC](https://x.com/affaanmustafa/status/2014040193557471352)
-- **팔로우:** [@affaanmustafa](https://x.com/affaanmustafa)
+- **팔로우:** [@mohsinali373](https://github.com/mohsinali373)
 - **zenith.chat:** [zenith.chat](https://zenith.chat)
 
 ---

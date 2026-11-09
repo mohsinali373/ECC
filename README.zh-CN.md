@@ -1,8 +1,8 @@
 # ECC
 
-[![Stars](https://img.shields.io/github/stars/affaan-m/ECC?style=flat)](https://github.com/affaan-m/ECC/stargazers)
-[![Forks](https://img.shields.io/github/forks/affaan-m/ECC?style=flat)](https://github.com/affaan-m/ECC/network/members)
-[![Contributors](https://img.shields.io/github/contributors/affaan-m/ECC?style=flat)](https://github.com/affaan-m/ECC/graphs/contributors)
+[![Stars](https://img.shields.io/github/stars/mohsinali373/ECC?style=flat)](https://github.com/mohsinali373/ECC/stargazers)
+[![Forks](https://img.shields.io/github/forks/mohsinali373/ECC?style=flat)](https://github.com/mohsinali373/ECC/network/members)
+[![Contributors](https://img.shields.io/github/contributors/mohsinali373/ECC?style=flat)](https://github.com/mohsinali373/ECC/graphs/contributors)
 [![npm ecc-universal](https://img.shields.io/npm/dw/ecc-universal?label=ecc-universal%20weekly%20downloads&logo=npm)](https://www.npmjs.com/package/ecc-universal)
 [![npm ecc-agentshield](https://img.shields.io/npm/dw/ecc-agentshield?label=ecc-agentshield%20weekly%20downloads&logo=npm)](https://www.npmjs.com/package/ecc-agentshield)
 [![GitHub App Install](https://img.shields.io/endpoint?url=https%3A%2F%2Fapi.ecc.tools%2Fbadge%2Finstalls&logo=github)](https://github.com/marketplace/ecc-tools)
@@ -139,7 +139,7 @@ command -v ecc-memory-mcp
 
 ```bash
 # 添加市场
-/plugin marketplace add https://github.com/affaan-m/ECC
+/plugin marketplace add https://github.com/mohsinali373/ECC
 
 # 安装插件
 /plugin install ecc@ecc
@@ -157,7 +157,7 @@ command -v ecc-memory-mcp
 
 ```bash
 # 首先克隆仓库
-git clone https://github.com/affaan-m/ECC.git
+git clone https://github.com/mohsinali373/ECC.git
 cd ECC
 
 # 安装依赖（选择你常用的包管理器）
@@ -575,7 +575,7 @@ Claude Code v2.1+ 会**按照约定自动加载**已安装插件中的 `hooks/ho
 检测到重复的钩子文件：./hooks/hooks.json 指向已加载的文件
 ```
 
-**历史说明**：该问题曾在本仓库中引发多次「修复-回滚」循环（[#29](https://github.com/affaan-m/ECC/issues/29)、[#52](https://github.com/affaan-m/ECC/issues/52)、[#103](https://github.com/affaan-m/ECC/issues/103)）。因 Claude Code 版本间行为变更导致混淆，现已添加回归测试，防止该问题再次出现。
+**历史说明**：该问题曾在本仓库中引发多次「修复-回滚」循环（[#29](https://github.com/mohsinali373/ECC/issues/29)、[#52](https://github.com/mohsinali373/ECC/issues/52)、[#103](https://github.com/mohsinali373/ECC/issues/103)）。因 Claude Code 版本间行为变更导致混淆，现已添加回归测试，防止该问题再次出现。
 
 ---
 
@@ -587,7 +587,7 @@ Claude Code v2.1+ 会**按照约定自动加载**已安装插件中的 `hooks/ho
 
 ```bash
 # 将此仓库添加为市场
-/plugin marketplace add https://github.com/affaan-m/ECC
+/plugin marketplace add https://github.com/mohsinali373/ECC
 
 # 安装插件
 /plugin install ecc@ecc
@@ -601,7 +601,7 @@ Claude Code v2.1+ 会**按照约定自动加载**已安装插件中的 `hooks/ho
     "ecc": {
       "source": {
         "source": "github",
-        "repo": "affaan-m/ECC"
+        "repo": "mohsinali373/ECC"
       }
     }
   },
@@ -617,7 +617,7 @@ Claude Code v2.1+ 会**按照约定自动加载**已安装插件中的 `hooks/ho
 >
 > ```bash
 > # 首先克隆仓库
-> git clone https://github.com/affaan-m/ECC.git
+> git clone https://github.com/mohsinali373/ECC.git
 >
 > # 方案 A：用户级规则（对所有项目生效）
 > mkdir -p ~/.claude/rules
@@ -641,7 +641,7 @@ Claude Code v2.1+ 会**按照约定自动加载**已安装插件中的 `hooks/ho
 
 ```bash
 # 克隆仓库
-git clone https://github.com/affaan-m/ECC.git
+git clone https://github.com/mohsinali373/ECC.git
 
 # 将智能体文件复制到 Claude 配置目录
 cp ECC/agents/*.md ~/.claude/agents/
@@ -836,13 +836,13 @@ node tests/hooks/hooks.test.js
 
 本项目免费开源。赞助支持项目持续维护与功能迭代。
 
-[成为赞助者](https://github.com/sponsors/affaan-m) | [赞助档位](SPONSORS.md) | [赞助计划](SPONSORING.md)
+[成为赞助者](https://github.com/sponsors/mohsinali373) | [赞助档位](SPONSORS.md) | [赞助计划](SPONSORING.md)
 
 ---
 
 ## Star 历史
 
-[![Star History Chart](https://api.star-history.com/svg?repos=affaan-m/ECC&type=Date)](https://star-history.com/#affaan-m/ECC&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=mohsinali373/ECC&type=Date)](https://star-history.com/#mohsinali373/ECC&Date)
 
 ---
 
@@ -851,7 +851,7 @@ node tests/hooks/hooks.test.js
 - **快速上手指南（入门首选）：** [ECC 简明指南](https://x.com/affaanmustafa/status/2012378465664745795)
 - **长文指南（高阶进阶）：** [ECC 完整版深度指南](https://x.com/affaanmustafa/status/2014040193557471352)
 - **安全指南：** [安全指南](./the-security-guide.md) | [推文详解](https://x.com/affaanmustafa/status/2033263813387223421)
-- **关注作者：** [@affaanmustafa](https://x.com/affaanmustafa)
+- **关注作者：** [@mohsinali373](https://github.com/mohsinali373)
 
 ---
 

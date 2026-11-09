@@ -721,7 +721,7 @@ function releasePackRequirements(rootDir, docs, readiness) {
       includesAll(docs.namingMatrix, ['Claude plugin', 'Codex plugin', 'npm package', 'Publication Paths'])
         && includesAll(docs.releasePublicationChecklist, [
           'Ship `v2.0.0-rc.1` as **ECC**',
-          'affaan-m/ECC',
+          'mohsinali373/ECC',
           'ecc-universal',
           'claude plugin tag .claude-plugin --dry-run',
           'codex plugin marketplace add',

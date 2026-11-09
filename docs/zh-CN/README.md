@@ -2,9 +2,9 @@
 
 # ECC
 
-[![Stars](https://img.shields.io/github/stars/affaan-m/ECC?style=flat)](https://github.com/affaan-m/ECC/stargazers)
-[![Forks](https://img.shields.io/github/forks/affaan-m/ECC?style=flat)](https://github.com/affaan-m/ECC/network/members)
-[![Contributors](https://img.shields.io/github/contributors/affaan-m/ECC?style=flat)](https://github.com/affaan-m/ECC/graphs/contributors)
+[![Stars](https://img.shields.io/github/stars/mohsinali373/ECC?style=flat)](https://github.com/mohsinali373/ECC/stargazers)
+[![Forks](https://img.shields.io/github/forks/mohsinali373/ECC?style=flat)](https://github.com/mohsinali373/ECC/network/members)
+[![Contributors](https://img.shields.io/github/contributors/mohsinali373/ECC?style=flat)](https://github.com/mohsinali373/ECC/graphs/contributors)
 [![npm ecc-universal](https://img.shields.io/npm/dw/ecc-universal?label=ecc-universal%20weekly%20downloads\&logo=npm)](https://www.npmjs.com/package/ecc-universal)
 [![npm ecc-agentshield](https://img.shields.io/npm/dw/ecc-agentshield?label=ecc-agentshield%20weekly%20downloads\&logo=npm)](https://www.npmjs.com/package/ecc-agentshield)
 [![GitHub App Install](https://img.shields.io/endpoint?url=https%3A%2F%2Fapi.ecc.tools%2Fbadge%2Finstalls&logo=github)](https://github.com/marketplace/ecc-tools)
@@ -143,7 +143,7 @@
 
 ### v1.4.1 — 错误修复 (2026年2月)
 
-* **修复了直觉导入内容丢失问题** — `parse_instinct_file()` 在 `/instinct-import` 期间会静默丢弃 frontmatter 之后的所有内容（Action, Evidence, Examples 部分）。已由社区贡献者 @ericcai0814 修复 ([#148](https://github.com/affaan-m/ECC/issues/148), [#161](https://github.com/affaan-m/ECC/pull/161))
+* **修复了直觉导入内容丢失问题** — `parse_instinct_file()` 在 `/instinct-import` 期间会静默丢弃 frontmatter 之后的所有内容（Action, Evidence, Examples 部分）。已由社区贡献者 @ericcai0814 修复 ([#148](https://github.com/mohsinali373/ECC/issues/148), [#161](https://github.com/mohsinali373/ECC/pull/161))
 
 ### v1.4.0 — 多语言规则、安装向导 & PM2 (2026年2月)
 
@@ -167,7 +167,7 @@
 * **会话管理** — `/sessions` 命令用于查看会话历史
 * **持续学习 v2** — 基于直觉的学习，带有置信度评分、导入/导出、进化
 
-完整的更新日志请参见 [Releases](https://github.com/affaan-m/ECC/releases)。
+完整的更新日志请参见 [Releases](https://github.com/mohsinali373/ECC/releases)。
 
 ***
 
@@ -207,7 +207,7 @@ command -v ecc-memory-mcp
 
 ```bash
 # Add marketplace
-/plugin marketplace add https://github.com/affaan-m/ECC
+/plugin marketplace add https://github.com/mohsinali373/ECC
 
 # Install plugin
 /plugin install ecc@ecc
@@ -223,7 +223,7 @@ command -v ecc-memory-mcp
 
 ```bash
 # Clone the repo first
-git clone https://github.com/affaan-m/ECC.git
+git clone https://github.com/mohsinali373/ECC.git
 cd ECC
 
 # Install dependencies (pick your package manager)
@@ -631,7 +631,7 @@ Claude Code v2.1+ **会自动加载** 任何已安装插件中的 `hooks/hooks.j
 重复的钩子文件检测到：./hooks/hooks.json 解析到已加载的文件
 ```
 
-**历史背景：** 这已导致此仓库中多次修复/还原循环（[#29](https://github.com/affaan-m/ECC/issues/29), [#52](https://github.com/affaan-m/ECC/issues/52), [#103](https://github.com/affaan-m/ECC/issues/103)）。Claude Code 版本之间的行为发生了变化，导致了混淆。我们现在有一个回归测试来防止这种情况再次发生。
+**历史背景：** 这已导致此仓库中多次修复/还原循环（[#29](https://github.com/mohsinali373/ECC/issues/29), [#52](https://github.com/mohsinali373/ECC/issues/52), [#103](https://github.com/mohsinali373/ECC/issues/103)）。Claude Code 版本之间的行为发生了变化，导致了混淆。我们现在有一个回归测试来防止这种情况再次发生。
 
 ***
 
@@ -643,7 +643,7 @@ Claude Code v2.1+ **会自动加载** 任何已安装插件中的 `hooks/hooks.j
 
 ```bash
 # Add this repo as a marketplace
-/plugin marketplace add https://github.com/affaan-m/ECC
+/plugin marketplace add https://github.com/mohsinali373/ECC
 
 # Install the plugin
 /plugin install ecc@ecc
@@ -657,7 +657,7 @@ Claude Code v2.1+ **会自动加载** 任何已安装插件中的 `hooks/hooks.j
     "ecc": {
       "source": {
         "source": "github",
-        "repo": "affaan-m/ECC"
+        "repo": "mohsinali373/ECC"
       }
     }
   },
@@ -673,7 +673,7 @@ Claude Code v2.1+ **会自动加载** 任何已安装插件中的 `hooks/hooks.j
 >
 > ```bash
 > # 首先克隆仓库
-> git clone https://github.com/affaan-m/ECC.git
+> git clone https://github.com/mohsinali373/ECC.git
 >
 > # 选项 A：用户级规则（适用于所有项目）
 > mkdir -p ~/.claude/rules
@@ -697,7 +697,7 @@ Claude Code v2.1+ **会自动加载** 任何已安装插件中的 `hooks/hooks.j
 
 ```bash
 # Clone the repo
-git clone https://github.com/affaan-m/ECC.git
+git clone https://github.com/mohsinali373/ECC.git
 
 # Copy agents to your Claude config
 cp ECC/agents/*.md ~/.claude/agents/
@@ -867,7 +867,7 @@ e2e-testing 技能                              → e2e-runner: 关键用户流�
 <details>
 <summary><b>我的钩子不工作 / 我看到“重复钩子文件”错误</b></summary>
 
-这是最常见的问题。**不要在 `.claude-plugin/plugin.json` 中添加 `"hooks"` 字段。** Claude Code v2.1+ 会自动从已安装的插件加载 `hooks/hooks.json`。显式声明它会导致重复检测错误。参见 [#29](https://github.com/affaan-m/ECC/issues/29), [#52](https://github.com/affaan-m/ECC/issues/52), [#103](https://github.com/affaan-m/ECC/issues/103)。
+这是最常见的问题。**不要在 `.claude-plugin/plugin.json` 中添加 `"hooks"` 字段。** Claude Code v2.1+ 会自动从已安装的插件加载 `hooks/hooks.json`。显式声明它会导致重复检测错误。参见 [#29](https://github.com/mohsinali373/ECC/issues/29), [#52](https://github.com/mohsinali373/ECC/issues/52), [#103](https://github.com/mohsinali373/ECC/issues/103)。
 
 </details>
 
@@ -939,7 +939,7 @@ cp -r ECC/rules/common ~/.claude/rules/common
 
 * **Cursor**: 预翻译的配置位于 `.cursor/`。参见 [Cursor IDE 支持](#cursor-ide-支持)。
 * **OpenCode**: `.opencode/` 中的完整插件支持。参见 [OpenCode 支持](#opencode-支持)。
-* **Codex**: 对 macOS 应用和 CLI 的一流支持，带有适配器漂移防护和 SessionStart 回退。参见 PR [#257](https://github.com/affaan-m/ECC/pull/257)。
+* **Codex**: 对 macOS 应用和 CLI 的一流支持，带有适配器漂移防护和 SessionStart 回退。参见 PR [#257](https://github.com/mohsinali373/ECC/pull/257)。
 * **Antigravity**: 为工作流、技能和扁平化规则紧密集成的设置，位于 `.agents/`。参见 [Antigravity 指南](../ANTIGRAVITY-GUIDE.md)。
 * **Claude Code**: 原生支持 — 这是主要目标。
 
@@ -1426,13 +1426,13 @@ ECC 是**第一个最大化利用每个主要 AI 编码工具的插件**。以�
 
 这个项目是免费和开源的。赞助商帮助保持其维护和发展。
 
-[**成为赞助商**](https://github.com/sponsors/affaan-m) | [赞助层级](SPONSORS.md) | [赞助计划](SPONSORING.md)
+[**成为赞助商**](https://github.com/sponsors/mohsinali373) | [赞助层级](SPONSORS.md) | [赞助计划](SPONSORING.md)
 
 ***
 
 ## Star 历史
 
-[![Star History Chart](https://api.star-history.com/svg?repos=affaan-m/ECC\&type=Date)](https://star-history.com/#affaan-m/ECC\&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=mohsinali373/ECC\&type=Date)](https://star-history.com/#mohsinali373/ECC\&Date)
 
 ***
 
@@ -1440,7 +1440,7 @@ ECC 是**第一个最大化利用每个主要 AI 编码工具的插件**。以�
 
 * **速查指南（从这里开始）：** [Claude Code 速查指南](https://x.com/affaanmustafa/status/2012378465664745795)
 * **详细指南（进阶）：** [Claude Code 详细指南](https://x.com/affaanmustafa/status/2014040193557471352)
-* **关注：** [@affaanmustafa](https://x.com/affaanmustafa)
+* **关注：** [@mohsinali373](https://github.com/mohsinali373)
 * **zenith.chat：** [zenith.chat](https://zenith.chat)
 * **技能目录：** awesome-agent-skills（社区维护的智能体技能目录）
 

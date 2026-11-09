@@ -171,4 +171,4 @@ Gelişmiş özellikler için (10k+ commit, ekip paylaşımı, otomatik PR'lar), 
 
 ---
 
-*[ECC](https://github.com/affaan-m/ECC)'un bir parçası*
+*[ECC](https://github.com/mohsinali373/ECC)'un bir parçası*

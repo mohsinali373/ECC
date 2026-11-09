@@ -25,7 +25,7 @@ const sha256 = value => crypto.createHash('sha256').update(value).digest('hex');
 const legacyPluginFixtures = [
   {
     name: "2.2.1 barrel",
-    // https://github.com/affaan-m/ECC/blob/ca185ef5f7667078a1e70a763bd3a9c71c48acf0/.opencode/plugins/index.ts
+    // https://github.com/mohsinali373/ECC/blob/ca185ef5f7667078a1e70a763bd3a9c71c48acf0/.opencode/plugins/index.ts
     sha256: '965c5fac76ce0c3ceb3836814f5eb9ede8c9db50373a508c734f949cb321a21a',
     content: `/**
  * ECC Plugins for OpenCode
@@ -43,7 +43,7 @@ export * from "./ecc-hooks.js"
   },
   {
     name: "early barrel",
-    // https://github.com/affaan-m/ECC/blob/6d440c036df2c1b2fec957627d1202c3708e0627/.opencode/plugins/index.ts
+    // https://github.com/mohsinali373/ECC/blob/6d440c036df2c1b2fec957627d1202c3708e0627/.opencode/plugins/index.ts
     sha256: 'e42c733adb177f84cea813663aa34c7868dbaa98c96950d0ef91cd211b8aa169',
     content: `/**
  * Everything Claude Code (ECC) Plugins for OpenCode

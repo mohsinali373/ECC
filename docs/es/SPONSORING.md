@@ -39,5 +39,5 @@ Para comandos exactos y un proceso de extracción repetible, consulta [`docs/bus
 
 ## Patrocina Aquí
 
-- GitHub Sponsors: [https://github.com/sponsors/affaan-m](https://github.com/sponsors/affaan-m)
+- GitHub Sponsors: [https://github.com/sponsors/mohsinali373](https://github.com/sponsors/mohsinali373)
 - Sitio del proyecto: [https://ecc.tools](https://ecc.tools)

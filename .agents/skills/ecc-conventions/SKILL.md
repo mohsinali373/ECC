@@ -6,7 +6,7 @@ license: MIT
 
 # ECC Conventions
 
-> Generated from [affaan-m/ECC](https://github.com/affaan-m/ECC) on 2026-03-20
+> Generated from [mohsinali373/ECC](https://github.com/mohsinali373/ECC) on 2026-03-20
 
 ## Overview
 

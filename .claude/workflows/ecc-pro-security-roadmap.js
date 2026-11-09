@@ -115,7 +115,7 @@ const GUARDRAILS = [
   'CONSTRAINTS: research/triage only. Do NOT modify any code, do NOT open/close/merge PRs, do NOT post comments,',
   'do NOT send any external message. Return findings as data only.',
   'Brand it "ECC" only (never the retired expanded name). AgentShield was FEATURED at a hackathon, never say it "won".',
-  'AgentShield npm package is "ecc-agentshield". Local clone: ~/GitHub/ECC/agentshield. ECC repo: affaan-m/ECC. AgentShield repo: affaan-m/agentshield.',
+  'AgentShield npm package is "ecc-agentshield". Local clone: ~/GitHub/ECC/agentshield. ECC repo: mohsinali373/ECC. AgentShield repo: affaan-m/agentshield.',
   'You have Bash (gh CLI), Read, Grep, Glob, and web tools (load via ToolSearch: WebSearch / firecrawl / exa).'
 ].join(' ');
 
@@ -134,7 +134,7 @@ const surveyThunks = [
     ),
   () =>
     agent(
-      `${GUARDRAILS}\n\nTRIAGE every OPEN PR and ISSUE on the ECC repo (affaan-m/ECC). Use gh: \`gh pr list --repo affaan-m/ECC --state open --limit 80 --json number,title,author,isDraft\` and \`gh issue list --repo affaan-m/ECC --state open --limit 80 --json number,title,labels\`. For the higher-signal ones, peek at the diff/body (\`gh pr view <n> --repo affaan-m/ECC\`). Categorize each: merge / close / needs-work / triage-later / security-priority, with a one-line rationale and any Pro/MRR value. Prioritize identifying security-relevant and Pro-relevant items. repo="affaan-m/ECC".`,
+      `${GUARDRAILS}\n\nTRIAGE every OPEN PR and ISSUE on the ECC repo (mohsinali373/ECC). Use gh: \`gh pr list --repo mohsinali373/ECC --state open --limit 80 --json number,title,author,isDraft\` and \`gh issue list --repo mohsinali373/ECC --state open --limit 80 --json number,title,labels\`. For the higher-signal ones, peek at the diff/body (\`gh pr view <n> --repo mohsinali373/ECC\`). Categorize each: merge / close / needs-work / triage-later / security-priority, with a one-line rationale and any Pro/MRR value. Prioritize identifying security-relevant and Pro-relevant items. repo="mohsinali373/ECC".`,
       { label: 'triage:ecc', phase: 'Survey', agentType: 'general-purpose', schema: TRIAGE_SCHEMA }
     ),
   () =>

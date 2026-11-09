@@ -9,9 +9,9 @@ const {
 } = require('../../scripts/lib/terminal-welcome');
 
 const OFFICIAL_LINKS = Object.freeze({
-  github: 'https://github.com/affaan-m/ECC',
+  github: 'https://github.com/mohsinali373/ECC',
   discord: 'https://discord.gg/36yGMHGFbR',
-  documentation: 'https://github.com/affaan-m/ECC#readme',
+  documentation: 'https://github.com/mohsinali373/ECC#readme',
   githubApp: 'https://github.com/apps/ecc-tools',
 });
 

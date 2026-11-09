@@ -139,7 +139,7 @@ const ADAPTER_RECORDS = Object.freeze([
       'Agent chains, approval prompts, and persistent todos require companion Pi packages and are not part of this adapter (individual agent definitions are portable via scripts/agent-convert.js)',
       'Pi core has no MCP surface, though ECC MCP configs load verbatim through the community pi-mcp-adapter package, which ECC neither installs nor depends on',
     ],
-    install_or_onramp: ['`pi install git:github.com/affaan-m/ECC`', '`pi install /path/to/ECC` from a local checkout'],
+    install_or_onramp: ['`pi install git:github.com/mohsinali373/ECC`', '`pi install /path/to/ECC` from a local checkout'],
     verification_commands: [
       '`node tests/pi/pi-package-manifest.test.js`',
       '`node tests/pi/pi-extension-adapter.test.js`',

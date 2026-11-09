@@ -4,7 +4,7 @@ Candidate id: `correct-read-preserve-effect`
 
 This synthetic, read-only example records expected rubric decisions. It does not
 execute commands, contact devices or reproduce the
-[reported incidents](https://github.com/affaan-m/ECC/issues/3699).
+[reported incidents](https://github.com/mohsinali373/ECC/issues/3699).
 
 ## Worked State Comparison
 

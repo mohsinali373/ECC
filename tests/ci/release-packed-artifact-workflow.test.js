@@ -197,7 +197,7 @@ for (const workflowPath of workflowPaths) {
 // Synthetic repository facts mirror the trusted workflow/attempt API contracts.
 const releaseSha = 'a'.repeat(40);
 const tagSha = 'b'.repeat(40);
-const repository = 'affaan-m/ECC';
+const repository = 'mohsinali373/ECC';
 const inputs = { repository, releaseSha, releaseTag: 'v1.2.3', token: 'synthetic-token' };
 const repoIdentity = { id: 1136590548, full_name: repository, default_branch: 'main' };
 const requiredNames = ['Analyze (actions)', 'Analyze (javascript-typescript)', 'Analyze (python)'];
@@ -503,9 +503,9 @@ test('final tag-only recheck requires the original verified object SHA', async (
 
 for (const [name, link] of [
   ['self loop', url => `<${url}>; rel="next"`],
-  ['foreign host', () => '<https://evil.invalid/repos/affaan-m/ECC/actions/workflows?page=2>; rel="next"'],
+  ['foreign host', () => '<https://evil.invalid/repos/mohsinali373/ECC/actions/workflows?page=2>; rel="next"'],
   ['foreign repository', () => '<https://api.github.com/repos/other/ECC/actions/workflows?page=2>; rel="next"'],
-  ['foreign endpoint', () => '<https://api.github.com/repos/affaan-m/ECC/actions/runs?per_page=100&page=2>; rel="next"'],
+  ['foreign endpoint', () => '<https://api.github.com/repos/mohsinali373/ECC/actions/runs?per_page=100&page=2>; rel="next"'],
   ['changed query', url => `<${url.replace('per_page=100', 'per_page=1')}&page=2>; rel="next"`],
   ['malformed next', () => 'not-a-link; rel="next"'],
   ['duplicate next', url => `<${url}&page=2>; rel="next", <${url}&page=3>; rel="next"`],

@@ -76,7 +76,7 @@ test('actual CLI closes six excess PRs, locks them, blocks with owner identity, 
     assert(mutations.some(m => m.route === '/user/blocks/contributor' && m.token === 'Bearer owner-token'));
     assert(mutations.filter(m => m.route.startsWith('/repos/')).every(m => m.token === 'Bearer moderation-token'));
     assert.doesNotMatch(fs.readFileSync(summary, 'utf8'), /untrusted|owner-token|moderation-token/);
-    assert(issue.body.includes('@affaan-m @haelyra'));
+    assert(issue.body.includes('@mohsinali373'));
 
     delete env.PR_MODERATION_BLOCK_TOKEN;
     await assert.rejects(run(), error => {

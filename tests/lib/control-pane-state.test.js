@@ -183,7 +183,7 @@ async function writeSampleEcc2Database(dbPath) {
     'runbook',
     'Hermes revenue runbook',
     '/notes/hermes.md',
-    'How Affaan routes Hermes Desktop, Zellij panes, Devin-style delegation, and ECC release control work.',
+    'How Mohsin Ali routes Hermes Desktop, Zellij panes, Devin-style delegation, and ECC release control work.',
     JSON.stringify({ source: 'hermes_workspace', platform: 'desktop' }),
     '2026-06-03T10:10:00Z',
     '2026-06-03T10:10:00Z'
@@ -285,8 +285,8 @@ async function writeSampleWorkItemsDatabase(dbPath) {
     'Merge ECC control pane',
     'done',
     'normal',
-    'https://github.com/affaan-m/ECC/pull/2131',
-    'affaan',
+    'https://github.com/mohsinali373/ECC/pull/2131',
+    'mohsinali373',
     '/repo/ecc',
     null,
     JSON.stringify({
@@ -321,7 +321,7 @@ async function writeSampleWorkItemsDatabase(dbPath) {
     'Triage 400k context window bug',
     'open',
     'high',
-    'https://github.com/affaan-m/ECC/issues/2290',
+    'https://github.com/mohsinali373/ECC/issues/2290',
     null,
     '/repo/ecc',
     null,

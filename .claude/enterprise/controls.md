@@ -4,7 +4,7 @@ This is a starter governance file for enterprise ECC deployments.
 
 ## Baseline
 
-- Repository: https://github.com/affaan-m/ECC
+- Repository: https://github.com/mohsinali373/ECC
 - Recommended profile: full
 - Keep install manifests, audit allowlists, and Codex baselines under review.
 

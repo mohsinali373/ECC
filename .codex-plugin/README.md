@@ -25,7 +25,7 @@ Codex 0.146.0 and newer use `plugin add`, not `plugin install`. Add ECC's
 repository marketplace, install the native plugin, and verify the registration:
 
 ```bash
-codex plugin marketplace add affaan-m/ECC
+codex plugin marketplace add mohsinali373/ECC
 codex plugin add ecc@ecc
 codex plugin list --json
 ```
@@ -103,7 +103,7 @@ Codex 0.164.0 can reject a plugin after a normal dependency install with
 `unsupported plugin entry type ... node_modules/.bin/js-yaml`. npm normally
 creates executable symlinks in `.bin`; that Codex version's hook fingerprint
 walker accepts only directories and regular files. See
-[ECC #3742](https://github.com/affaan-m/ECC/issues/3742) and the
+[ECC #3742](https://github.com/mohsinali373/ECC/issues/3742) and the
 [Codex fingerprint implementation](https://github.com/openai/codex/blob/rust-v0.164.0/codex-rs/hooks/src/engine/plugin_fingerprint.rs).
 
 For an explicitly chosen cache-local dependency install, use npm's

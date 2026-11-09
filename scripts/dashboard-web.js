@@ -15,7 +15,7 @@
  * only SSH access you already control on your own machine -- nothing here
  * opens the dashboard to the network.
  *
- * Contribution: https://github.com/affaan-m/ECC
+ * Contribution: https://github.com/mohsinali373/ECC
  */
 
 const fs = require('fs');
@@ -463,7 +463,7 @@ function renderHTML(data) {
 
 <div class="toast" id="toast"><span class="ck">✓</span> <span id="toast-msg"></span></div>
 <div class="footer">
-  <a href="https://github.com/affaan-m/ECC" target="_blank">github.com/affaan-m/ECC</a>
+  <a href="https://github.com/mohsinali373/ECC" target="_blank">github.com/mohsinali373/ECC</a>
   <span class="dt"></span>
   <span>ECC v2.0.0-rc.1</span>
   <span class="dt"></span>

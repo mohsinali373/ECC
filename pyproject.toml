@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "MIT"}
 authors = [
-    {name = "Affaan Mustafa", email = "affaan@example.com"}
+    {name = "Mohsin Ali", email = "mohsinali373@users.noreply.github.com"}
 ]
 keywords = ["llm", "openai", "anthropic", "ollama", "ai"]
 classifiers = [
@@ -35,8 +35,8 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/affaan-m/ECC"
-Repository = "https://github.com/affaan-m/ECC"
+Homepage = "https://github.com/mohsinali373/ECC"
+Repository = "https://github.com/mohsinali373/ECC"
 
 [project.scripts]
 llm-select = "llm.cli.selector:main"

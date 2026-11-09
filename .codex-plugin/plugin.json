@@ -3,12 +3,12 @@
   "version": "2.2.3",
   "description": "Harness-native ECC workflows for Codex: shared skills, production-ready MCP configs, and selective-install-aligned conventions for TDD, security scanning, code review, and autonomous development.",
   "author": {
-    "name": "Affaan Mustafa",
-    "email": "me@affaanmustafa.com",
-    "url": "https://x.com/affaanmustafa"
+    "name": "Mohsin Ali",
+    "email": "mohsinali373@users.noreply.github.com",
+    "url": "https://github.com/mohsinali373"
   },
   "homepage": "https://ecc.tools",
-  "repository": "https://github.com/affaan-m/ECC",
+  "repository": "https://github.com/mohsinali373/ECC",
   "license": "MIT",
   "keywords": [
     "codex",
@@ -27,7 +27,7 @@
     "displayName": "ECC",
     "shortDescription": "281 ECC skills plus MCP configs for TDD, security, code review, and autonomous development.",
     "longDescription": "ECC is a harness-native operator system for Codex and adjacent agent harnesses. It packages reusable skills, MCP configs, TDD workflows, security scanning, code review, architecture decisions, operator workflows, and release gates in one installable plugin.",
-    "developerName": "Affaan Mustafa",
+    "developerName": "Mohsin Ali",
     "category": "Coding",
     "capabilities": [
       "Interactive",

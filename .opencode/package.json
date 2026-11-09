@@ -43,16 +43,16 @@
     "hooks",
     "automation"
   ],
-  "author": "affaan-m",
+  "author": "mohsinali373",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/affaan-m/ECC.git"
+    "url": "git+https://github.com/mohsinali373/ECC.git"
   },
   "bugs": {
-    "url": "https://github.com/affaan-m/ECC/issues"
+    "url": "https://github.com/mohsinali373/ECC/issues"
   },
-  "homepage": "https://github.com/affaan-m/ECC#readme",
+  "homepage": "https://github.com/mohsinali373/ECC#readme",
   "publishConfig": {
     "access": "public"
   },
