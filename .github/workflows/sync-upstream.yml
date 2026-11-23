@@ -1,0 +1,134 @@
+name: Sync Upstream (Automated PR)
+
+on:
+  schedule:
+    # Runs every 12 hours (at 00:00 and 12:00 UTC)
+    - cron: '0 */12 * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Force sync even if commit hash matches'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    name: Check & Sync Upstream
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch upstream repository
+        run: |
+          git remote add upstream https://github.com/affaan-m/ECC.git || git remote set-url upstream https://github.com/affaan-m/ECC.git
+          git fetch upstream main
+
+      - name: Check for new commits
+        id: check_upstream
+        run: |
+          UPSTREAM_HASH=$(git rev-parse upstream/main)
+          echo "Latest upstream hash: $UPSTREAM_HASH"
+          echo "upstream_hash=$UPSTREAM_HASH" >> $GITHUB_OUTPUT
+
+          LAST_HASH=""
+          if [ -f .upstream_commit ]; then
+            LAST_HASH=$(tr -d '\r\n ' < .upstream_commit)
+          fi
+          echo "Last recorded hash: $LAST_HASH"
+
+          FORCE="${{ github.event.inputs.force }}"
+          if [ "$FORCE" = "true" ]; then
+            echo "Force sync requested."
+            echo "has_updates=true" >> $GITHUB_OUTPUT
+          elif [ "$UPSTREAM_HASH" != "$LAST_HASH" ]; then
+            echo "New updates found in upstream!"
+            echo "has_updates=true" >> $GITHUB_OUTPUT
+          else
+            echo "Repository is already up-to-date with upstream."
+            echo "has_updates=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Check for existing open sync PR
+        id: check_pr
+        if: steps.check_upstream.outputs.has_updates == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          OPEN_PR_COUNT=$(gh pr list --state open --search "Sync: Upstream updates from affaan-m/ECC" --json number -q 'length')
+          echo "Existing open sync PR count: $OPEN_PR_COUNT"
+          if [ "$OPEN_PR_COUNT" -gt 0 ]; then
+            echo "pr_exists=true" >> $GITHUB_OUTPUT
+            echo "An open sync PR is already pending review. Skipping new PR creation."
+          else
+            echo "pr_exists=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create sync branch and merge upstream
+        if: steps.check_upstream.outputs.has_updates == 'true' && steps.check_pr.outputs.pr_exists == 'false'
+        run: |
+          BRANCH_NAME="sync/upstream-updates"
+          git checkout -B "$BRANCH_NAME" main
+
+          # Merge upstream changes allowing unrelated history
+          git merge upstream/main --allow-unrelated-histories -m "chore(sync): merge upstream changes from affaan-m/ECC" || true
+
+          # If branding files conflicted, preserve our author info
+          for file in README.md README.zh-CN.md package.json; do
+            if git status --porcelain | grep -q "$file"; then
+              echo "Preserving our version for $file"
+              git checkout --ours "$file" 2>/dev/null || true
+              git add "$file" 2>/dev/null || true
+            fi
+          done
+
+          # Record the new upstream hash
+          echo "${{ steps.check_upstream.outputs.upstream_hash }}" > .upstream_commit
+          git add .upstream_commit
+          git add -A
+
+          # Commit merge/resolution if needed
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(sync): update upstream commit tracker to ${{ steps.check_upstream.outputs.upstream_hash }}" || true
+          fi
+
+          # Push sync branch to origin
+          git push origin "$BRANCH_NAME" --force
+
+      - name: Open Pull Request
+        if: steps.check_upstream.outputs.has_updates == 'true' && steps.check_pr.outputs.pr_exists == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          LATEST_LOG=$(git log upstream/main -n 1 --pretty=format:"%h - %s (%an)")
+          PR_TITLE="Sync: Upstream updates from affaan-m/ECC"
+          PR_BODY="### 🔄 Upstream Updates Detected
+
+          New commits have been detected in the upstream repository [affaan-m/ECC](https://github.com/affaan-m/ECC).
+
+          - **Upstream commit:** \`${{ steps.check_upstream.outputs.upstream_hash }}\`
+          - **Latest commit summary:** \`$LATEST_LOG\`
+          - **Branch:** \`sync/upstream-updates\` -> \`main\`
+
+          #### Notes:
+          - Your author and maintainer branding in \`README.md\` and \`package.json\` has been preserved.
+          - Review the file diffs below and click **Merge pull request** when you are ready to apply these updates to your \`main\` branch."
+
+          gh pr create \
+            --title "$PR_TITLE" \
+            --body "$PR_BODY" \
+            --base main \
+            --head "sync/upstream-updates"
